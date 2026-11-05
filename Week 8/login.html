@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+        <p id="login-error" role="alert" hidden style="color: #b91c1c; margin-bottom: 1rem;">
+            Incorrect username or password. Please try again.
+        </p>
+
+        <form method="post" action="process.php" style="max-width: 360px; padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px; font-family: Arial, sans-serif;">
+            <label for="username" style="display: block; margin-bottom: 0.35rem;">Username:</label>
+            <input type="text" id="username" name="username" autocomplete="username" required style="box-sizing: border-box; width: 100%; padding: 0.6rem; margin-bottom: 1rem; border: 1px solid #bbb; border-radius: 4px;">
+
+            <label for="password" style="display: block; margin-bottom: 0.35rem;">Password:</label>
+            <input type="password" id="password" name="password" autocomplete="current-password" required style="box-sizing: border-box; width: 100%; padding: 0.6rem; margin-bottom: 1rem; border: 1px solid #bbb; border-radius: 4px;">
+
+            <input type="hidden" name="token" value="abc123">
+            <button type="submit" style="padding: 0.6rem 1rem; color: #fff; background: #2563eb; border: 0; border-radius: 4px; cursor: pointer;">Login</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; COS10026</p>
+    </footer>
+</body>
+</html>
